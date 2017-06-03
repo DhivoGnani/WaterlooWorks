@@ -69,5 +69,11 @@ function Start() {
 	}
 }
 
-// Start
-Start();
+
+// Wait until document is ready
+var tid = setInterval( function () {
+    if ( document.readyState !== 'complete' ) return;
+    clearInterval( tid );       
+	// Start
+	Start();
+}, 100 );
