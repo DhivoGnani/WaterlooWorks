@@ -4,7 +4,9 @@
   "name": "WaterlooWorks Chrome Extension",
   "version": "0.1.0",
   "description": "Adds additional functionality to WaterlooWorks.",
- 
+   "browser_action": {
+    "default_icon": "logo.png"
+  },
   "content_scripts": [{
     "matches": ["https://waterlooworks.uwaterloo.ca/myAccount/co-op/coop-postings.htm"],
     "js": ["content.js"]
