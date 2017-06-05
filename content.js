@@ -9,7 +9,7 @@ function UpdatePostingsTable(postingsTable) {
 
 	// iterate for each row
 	for (var i = 0, row; row = postings.rows[i]; i++) {
-
+		row.onclick = postingClick;
 	   // first cell contains acceptance result
 	   var acceptanceResult = row.cells[0];
 	   // remove whitespace from text
@@ -36,6 +36,9 @@ function UpdatePostingsTable(postingsTable) {
 	DisplaySelectionCount(postingsTable); 
 }
 
+function postingClick() {
+	this.classList.toggle("important-posting");
+}
 // display selection count on first row of table
 function DisplaySelectionCount(postingsTable) {
 	var selectionCount = GetSelectionCount(postingsTable);
