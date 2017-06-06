@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
  
-  "name": "WaterlooWorks Chrome Extension",
+  "name": "WaterlooWorks",
   "version": "0.1.0",
   "description": "Adds additional functionality to WaterlooWorks.",
    "browser_action": {
